@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+h2 {
+    text-align: center;
+  }
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+.new-member-form {
+    margin: 2em 0 4em 0;
+    text-align: center;
+  }
+  
+.member-item {
+    padding: 0.25em 0;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+.grid-item {
+    display: relative;
+    background-color: #f1f1f1;
+    border: 1px solid lightblue;
+    border-radius: 5%;
+    padding: 20px;
+    text-align: center;
+  }
+  .grid-item > .deleteButton {
+    position: relative;
+    margin-left: 1rem;
+    right: 0;
+    top: 0;
+    font-weight: bolder;
+    color: darkred;
+    border: 2px solid darkred;
+    border-radius: 100%;
+}
+
+
+.buttonSend {
+  font-size: 85%;
+  margin-left: 5%;
+}

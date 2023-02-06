@@ -2,12 +2,10 @@ const express = require("express");
 
 const router = express.Router();
 
-const itemControllers = require("./controllers/itemControllers");
+const argonauteControllers = require("./controllers/argonauteControllers");
 
-router.get("/items", itemControllers.browse);
-router.get("/items/:id", itemControllers.read);
-router.put("/items/:id", itemControllers.edit);
-router.post("/items", itemControllers.add);
-router.delete("/items/:id", itemControllers.destroy);
+router.get("/argonaute", argonauteControllers.browse);
+router.post("/argonaute", argonauteControllers.add);
+router.delete("/argonaute/:id", argonauteControllers.destroy);
 
 module.exports = router;
